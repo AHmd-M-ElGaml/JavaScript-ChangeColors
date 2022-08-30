@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Template With HTML, CSS3, JavaScript." />
+  <meta name="theme-color" content="rgb(32, 120, 171)" />
+  <title>JavaScript ChangeColors</title>
+  <link rel="apple-touch-icon" href="imgs/control.png" />
+  <link rel="shortcut icon" href="imgs/control.png" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <!-- Render all element -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Main css file -->
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <link rel="stylesheet" href="css/stylemin.css" />
+</head>
+
+<body>
+  <div class="set-box set-ope">
+    <h2 class="set-head">Control panel</h2>
+    <div class="gear">
+      <i class="fa-solid fa-gear"></i>
+    </div>
+    <div class="set-item" id="colors">
+      <h3>Colors</h3>
+      <ul class="set-colors">
+        <li style="background-color: rgb(32, 120, 171)" class="color-active"></li>
+        <li style="background-color: rgb(227, 17, 17)"></li>
+        <li style="background-color: rgb(19, 161, 48)"></li>
+        <li style="background-color: rgb(217, 132, 12)"></li>
+        <li style="background-color: rgb(247, 36, 215)"></li>
+      </ul>
+    </div>
+    <div class="set-item">
+      <h3>Random Backgrounds</h3>
+      <ul class="set-random set-op">
+        <li class="yes active-op">Yes</li>
+        <li class="no">No</li>
+      </ul>
+    </div>
+    <div class="set-item">
+      <h3>Light Mood</h3>
+      <ul class="set-mood set-op">
+        <li class="yes active-op">Yes</li>
+        <li class="no">No</li>
+      </ul>
+    </div>
+    <div class="set-item">
+      <h3>Show Bullets</h3>
+      <ul class="set-bullets set-op">
+        <li class="yes active-op">Yes</li>
+        <li class="no">No</li>
+      </ul>
+    </div>
+    <div class="reset">Reset</div>
+  </div>
+  <div class="bullets">
+    <ul>
+      <li data-section="about">
+        <span class="bul-content" data-section="about">About</span>
+      </li>
+      <li data-section="skills">
+        <span class="bul-content" data-section="skills">Skills</span>
+      </li>
+      <li data-section="gallery">
+        <span class="bul-content" data-section="gallery">Gallery</span>
+      </li>
+      <li data-section="timeline">
+        <span class="bul-content" data-section="timeline">Timeline</span>
+      </li>
+      <li data-section="features">
+        <span class="bul-content" data-section="features">Features</span>
+      </li>
+      <li data-section="test">
+        <span class="bul-content" data-section="test">Testimonials</span>
+      </li>
+    </ul>
+  </div>
+  <section class="home">
+    <div class="overlay">
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            <a href="#index.html">
+              <img src="imgs/control.png" alt="My Logo desgin" />
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="links">
+              <li>
+                <a href="#about" class="menu-link" accesskey="About">About</a>
+              </li>
+              <li>
+                <a href="#skills" class="menu-link" accesskey="Skills">Skills</a>
+              </li>
+              <li>
+                <a href="#gallery" class="menu-link" accesskey="Gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="#timeline" class="menu-link" accesskey="Timeline">Timeline</a>
+              </li>
+              <li>
+                <a href="#features" class="menu-link" accesskey="Features">Features</a>
+              </li>
+              <li>
+                <a href="#testimonials" class="menu-link">Testimonials</a>
+              </li>
+            </ul>
+            <div class="menu-toggle">
+              <i class="fa-solid fa-bars"></i>
+              <span class="menu-arrow"></span>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="home-text">
+        <h1 class="home-title">
+          We Are <span class="home-crea">Creative</span> Agency
+        </h1>
+        <p class="home-par">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          dolores.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-text">
+        <h2 class="main-head">About us</h2>
+        <p class="about-par">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+          deleniti reiciendis quibusdam id molestias laudantium eaque dolore
+          id molestias laudantium eaque dolore tempora temporibus tempora
+          temporibus illum?
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="imgs/landing-image.png" alt="About us image" />
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <h2 class="main-head">Our Skills</h2>
+    <div class="container">
+      <div class="skill-item">
+        <div class="skill-name">HTML</div>
+        <div class="skill-show"><span data-width="90%"></span></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">CSS</div>
+        <div class="skill-show"><span data-width="85%"></span></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">Javascript</div>
+        <div class="skill-show"><span data-width="80%"></span></div>
+      </div>
+      <!-- <div class="skill-item">
+          <div class="skill-name">React</div>
+          <div class="skill-show"><span data-width="70%"></span></div>
+        </div> -->
+      <div class="skill-item">
+        <div class="skill-name">C++</div>
+        <div class="skill-show"><span data-width="90%"></span></div>
+      </div>
+    </div>
+  </section>
+  <!-- Start Gallery -->
+
+  <section class="gallery" id="gallery">
+    <h2 class="main-head">Our Gallery</h2>
+    <div class="container">
+      <div><img src="imgs/01.jpg" alt="Image 1" /></div>
+      <div><img src="imgs/08.jpg" alt="Image 2" /></div>
+      <div><img src="imgs/02.jpg" alt="Image 3" /></div>
+      <div><img src="imgs/03.jpg" alt="Image 4" /></div>
+      <div><img src="imgs/09.jpg" alt="Image 5" /></div>
+      <div><img src="imgs/04.jpg" alt="Image 6" /></div>
+      <div><img src="imgs/05.jpg" alt="Image 7" /></div>
+      <div><img src="imgs/10.jpg" alt="Image 8" /></div>
+      <div><img src="imgs/06.jpg" alt="Image 9" /></div>
+      <div><img src="imgs/07.jpg" alt="Image 10" /></div>
+    </div>
+  </section>
+  <!-- <div class="show-img">
+      <div class="img-box">
+        <h3 class="img-title">Image one</h3>
+        <img src="imgs/p1.jpg" alt="Image from gallery" />
+        <span class="close-img">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+    </div> -->
+  <!-- End Gallery -->
+  <!-- Start Timeline -->
+  <section class="timeline" id="timeline">
+    <div class="container">
+      <div class="tim-year">2022</div>
+      <div class="tim-box">
+        <h3 class="tim-head">Testing Heading</h3>
+        <p class="tim-par">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          nam ea eius beatae eligendi hic modi itaque distinctio iure
+          perspiciatis!
+        </p>
+      </div>
+      <div class="tim-box tim-right">
+        <h3 class="tim-head">Testing Heading</h3>
+        <p class="tim-par">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+          ipsum dolor sit amet consectetur, adipisicing elit. Fugiat aliquid
+          necessitatibus ducimus minima.
+        </p>
+      </div>
+      <div class="tim-year">2020</div>
+      <div class="tim-box">
+        <h3 class="tim-head">Testing Heading</h3>
+        <p class="tim-par">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+          sint, delectus aut culpa ex, dolorum expedita quis dolorem dolores
+          aliquid necessitatibus ducimus minima.
+        </p>
+      </div>
+      <div class="tim-box tim-right">
+        <h3 class="tim-head">Testing Heading</h3>
+        <p class="tim-par">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          nam ea eius beatae eligendi hic modi itaque distinctio iure
+          perspiciatis!
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End Timeline -->
+  <!-- Start Features -->
+  <section class="features" id="features">
+    <h2 class="main-head">Our Features</h2>
+    <div class="container">
+      <div class="feat-item">
+        <img src="imgs/programming.svg" alt="programming" />
+        <h3 class="feat-head">Development</h3>
+        <p class="feat-par">
+          We are professional marketeers, we will do anything you imagine in
+          no time.
+        </p>
+      </div>
+      <div class="feat-item">
+        <img src="imgs/advertising.svg" alt="programming" />
+        <h3 class="feat-head">Marketing</h3>
+        <p class="feat-par">
+          We are professional marketeers, we will do anything you imagine in
+          no time.
+        </p>
+      </div>
+      <div class="feat-item">
+        <img src="imgs/hosting-icon.svg" alt="programming" />
+        <h3 class="feat-head">Hosting</h3>
+        <p class="feat-par">
+          We are professional marketeers, we will do anything you imagine in
+          no time.
+        </p>
+      </div>
+      <div class="feat-item">
+        <img src="imgs/mobile-app.svg" alt="programming" />
+        <h3 class="feat-head">Mobile Develope</h3>
+        <p class="feat-par">
+          We are professional marketeers, we will do anything you imagine in
+          no time.
+        </p>
+      </div>
+      <div class="feat-item">
+        <img src="imgs/graphic-design.svg" alt="programming" />
+        <h3 class="feat-head">Cloud and Servers</h3>
+        <p class="feat-par">
+          We are professional marketeers, we will do anything you imagine in
+          no time.
+        </p>
+      </div>
+      <div class="feat-item">
+        <img src="imgs/web-design.svg" alt="programming" />
+        <h3 class="feat-head">Seo</h3>
+        <p class="feat-par">
+          We are professional marketeers, we will do anything you imagine in
+          no time.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End Features -->
+  <!-- Start Testimonials -->
+  <section class="test" id="testimonials">
+    <h2 class="test-title container">Testimonials</h2>
+    <div class="container">
+      <div class="test-box">
+        <p class="test-par">
+          I'm very happy with the product it's amazing and I received it very
+          fast and the price was amazing.
+        </p>
+        <div class="test-us">
+          <div class="test-img">
+            <img src="imgs/u8.png" alt="" />
+          </div>
+          <div>
+            <h3 class="test-head">Donatello</h3>
+            <div class="test-ceo">CEO At Company</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-box">
+        <p class="test-par">
+          I'm very happy with the product it's amazing and I received it very
+          fast and the price was amazing.
+        </p>
+        <div class="test-us">
+          <div class="test-img">
+            <img src="imgs/u5.png" alt="" />
+          </div>
+          <div>
+            <h3 class="test-head">Joni Deep</h3>
+            <div class="test-ceo">CEO At Company</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-box">
+        <p class="test-par">
+          I'm very happy with the product it's amazing and I received it very
+          fast and the price was amazing.
+        </p>
+        <div class="test-us">
+          <div class="test-img">
+            <img src="imgs/u6.png" alt="" />
+          </div>
+          <div>
+            <h3 class="test-head">Stefan Gerard</h3>
+            <div class="test-ceo">CEO At Company</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Testimonials -->
+  <!-- Start Contact  -->
+  <section class="contact">
+    <h2 class="main-head">Contact Us</h2>
+
+    <div class="container">
+      <form action="">
+        <div>
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="text" name="phone" placeholder="Your Number" />
+          <input type="email" name="email" placeholder="Your Email" />
+          <input type="text" name="subject" placeholder="Your Subject" />
+        </div>
+        <div>
+          <textarea name="" id="" cols="30" rows="9" placeholder="Your Message"></textarea>
+          <input type="submit" value="send" />
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- End Contact  -->
+  <footer class="footer">&copy;2021 XxX All right reserved</footer>
+  <!-- Main javascript file -->
+  <script src="js/script.js"></script>
+  <!-- <script src="js/scriptmin.js"></script> -->
+</body>
+
+</html>
